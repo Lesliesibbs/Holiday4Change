@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes, Test
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
