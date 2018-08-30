@@ -11,6 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+Route::get('/contact', 'ContactController@index');
+
+Route::get('/love2shop', 'Love2ShopController@index');
+
+Route::get('/about', 'AboutController@index');
+
+Route::get('/login-register', 'LoginRegisterController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
+Route::get('/competition', 'CompetitionController@index');
+
+Route::get('/payments', 'PaymentsController@index');
+
+Route::get('/change-password', 'ChangePasswordController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
