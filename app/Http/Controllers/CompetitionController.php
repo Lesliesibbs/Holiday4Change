@@ -9,7 +9,7 @@ class CompetitionController extends Controller
   public function index()
   {
 
-    return view('competition.index');
+    return view('admin.competition.index');
 
   }
 }

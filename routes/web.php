@@ -31,4 +31,14 @@ Route::get('/change-password', 'ChangePasswordController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'AdminController@index')->name('home');
+
+Route::get('/roles', 'UsersController@index')->name('users');
+
+Route::get('/email', 'EmailController@index')->name('email');
+
+Route::get('/calendar', 'CalendarController@index')->name('calendar');
+
+Route::get('/competition', 'CompetitionController@index')->name('competition');
+
+Route::get('/home', 'AdminController@index')->name('home');

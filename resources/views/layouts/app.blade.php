@@ -13,10 +13,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Bootstrap Core CSS -->
-    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css2/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
 
@@ -27,94 +25,84 @@
     <link href="css2/helper.css" rel="stylesheet">
     <link href="css2/style.css" rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-    <!-- Styles -->
-    <link href="{{ asset('css2/app.css') }}" rel="stylesheet">
+
 </head>
-<body class="fix-header fix-sidebar">
-
-  <!-- Preloader - style you can find in spinners.css -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
-			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-    </div>
-
-
-    <div id="app">
+<body class="fix-sidebar fix-header">
       <!-- Main wrapper  -->
     <div id="main-wrapper">
-        <!-- header header  -->
-        <div class="header">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <!-- Logo -->
-                <div class="navbar-header">
-
-
-                <a class="navbar-brand" href="{{ url('/home') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <!-- Logo icon -->
-                        <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
-                    </a>
-                </div>
-                <!-- End Logo -->
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+      <div class="header">
+                  <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                      <!-- Logo -->
+                      <div class="navbar-header">
+                          <a class="navbar-brand" href="{{ url('/home') }}">
+                          </a>
+                          <!-- Logo icon -->
+                                <b><img src="images2/logo.png" alt="homepage" class="dark-logo logo-position" /></b>
+                                <!--End Logo icon -->
+                                <!-- Logo text -->
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                <div class="navbar-collapse">
+                    <!-- toggle and nav items -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <!-- Messages -->
 
                     </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                    <!-- User profile and search -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- Profile -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images2/users/5.jpg" alt="user" class="profile-pic" />{{ Auth::user()->name }}</a>
+                            <div class="dropdown-menu dropdown-menu-right animated zoomIn">
+                                <ul class="dropdown-user">
+                                    <li><a href="#"><i class="ti-user"></i> Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
+                                    <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                        {{ __('Logout') }}><i class="fa fa-power-off"></i> Logout</a></li>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                </div>
-                            </li>
-                        @endguest
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+      </div>
+        <!-- End header header -->
+
+        @include ('layouts.left-sidebar')
+
+        <!-- Page wrapper  -->
+        <div class="page-wrapper">
+
+
 
         <main class="py-4">
             @yield('content')
         </main>
+
+        <!-- footer -->
+          <footer class="footer"> © 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
+          <!-- End footer -->
+
+        @include ('layouts.scripts')
+
+
     </div>
 </body>
 </html>
