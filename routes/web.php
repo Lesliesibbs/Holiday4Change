@@ -23,7 +23,9 @@ Route::get('/login-register', 'LoginRegisterController@index');
 
 Route::get('/profile', 'ProfileController@index');
 
-Route::get('/competition', 'CompetitionController@index');
+Route::get('/competition2', 'CompetitionController@index');
+
+Route::get('/competition', 'CompetitionController2@index');
 
 Route::get('/payments', 'PaymentsController@index');
 
@@ -39,6 +41,6 @@ Route::get('/email', 'EmailController@index')->name('email');
 
 Route::get('/calendar', 'CalendarController@index')->name('calendar');
 
-Route::get('/competition', 'CompetitionController@index')->name('competition');
+/*Route::get('/competition', 'CompetitionController@index')->name('competition');*/
 
 Route::get('/home', 'AdminController@index')->name('home');

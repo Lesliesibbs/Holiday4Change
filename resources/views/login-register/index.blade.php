@@ -69,7 +69,10 @@
 					</p>
 
 					<p class="form-row">
-						<input type="submit" class="button border margin-top-10" name="login" value="Login" />
+
+
+					<!-- 	<input type="submit" class="button border margin-top-10" name="login" value="Login" /> -->
+					<a href="{{ url('profile') }}" class="sign-in"><i class="fa fa-user"></i> Log In</a>
 
 						<label for="rememberme" class="rememberme">
 						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>

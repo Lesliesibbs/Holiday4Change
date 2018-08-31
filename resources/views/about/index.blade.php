@@ -23,19 +23,10 @@
 						<div class="search-container">
 
 							<!-- Form -->
-							<h2>Find the holiday just for you.</h2>
+							<h2>About Us</h2>
 
 							<!-- Row With Forms -->
 
-							<!-- Browse Jobs -->
-							<div class="adv-search-btn">
-								Need more search options? <a href="listings-list-full-width.html">Advanced Search</a>
-							</div>
-
-							<!-- Announce -->
-							<div class="announce">
-								We’ve 1000 properties for you!
-							</div>
 
 						</div>
 
@@ -68,9 +59,7 @@
 									<!-- Headline -->
 									<h2 class="headline with-border margin-top-45 margin-bottom-25">Welcome to Holiday4Change</h2>
 
-									<p>Etiam elit est, tincidunt non tincidunt elit, sed do. Mauris aliquet ultricies volutpat ipsum hendrerit sed neque sed sapien rutrum laoreet justo ut labolore magna aliqua. <del>This is deleted element</del> enim ad minim veniam. Lorem ipsum dosectetur.
-										Adipisicing elit sed domark element with “color” class., consectetur adipisicing. Lorem <dfn>dfn element here</dfn> ipsum dosectetur tincidunt sit amet, <strong>strong text</strong>. Aliquam eu id lectus. Vestibulum ante ipsum primis in faucibus
-										orci luctus et ultrices posuere cubilia. Lorem ipsum dosectetur velit sagittis, <abbr title="The abbr tag">abbreviation</abbr> elit est .</p>
+									<p>Being able to take time out in the year to visit different destinations with loved ones isn’t always as financially possible as we’d like it to be. Holiday4Change is a family run business who believe spending quality time with those dear to us as well as exploring different sites and cultures is a fundamental activity we all should get the chance to participate and explore in this time we have together on earth. We want to be able to give everyone the opportunity to do so without having to worry too much about funding it. By signing up and giving just £1.59 a month, you have the opportunity to win a £1000 holiday gift card courtesy of love2shop holiday which can be utilised in over 150+ popular holiday destinations including cruises. Building strong and lasting relationships, especially in places where you are most relaxed, enables us as humans to interact with each other, broadening and opening our minds to new experiences which allows growth and physical satisfaction in our own selves. Love, comfort and togetherness are the building blocks for much more than we realise and here at Holiday4Change we’re all about changing the world through strengthening relationships, one holiday at a time.</p>
 
 								</div>
 							</div>
@@ -86,93 +75,8 @@
 			</div>
 		</div>
 
-
-		<!-- Fullwidth Section -->
-		<section class="fullwidth margin-top-105" data-background-color="#f7f7f7">
-
-			<!-- Box Headline -->
-			<h3 class="headline-box">What are you looking for?</h3>
-
-			<!-- Content -->
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-3 col-sm-6">
-						<!-- Icon Box -->
-						<div class="icon-box-1">
-
-							<div class="icon-container">
-								<i class="im im-icon-Office"></i>
-								<div class="icon-links">
-									<a href="listings-grid-standard-with-sidebar.html">For Sale</a>
-									<a href="listings-grid-standard-with-sidebar.html">For Rent</a>
-								</div>
-							</div>
-
-							<h3>Apartments</h3>
-							<p>Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim donec vel lectus vel felis.</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-6">
-						<!-- Icon Box -->
-						<div class="icon-box-1">
-
-							<div class="icon-container">
-								<i class="im im-icon-Home-2"></i>
-								<div class="icon-links">
-									<a href="listings-grid-standard-with-sidebar.html">For Sale</a>
-									<a href="listings-grid-standard-with-sidebar.html">For Rent</a>
-								</div>
-							</div>
-
-							<h3>Houses</h3>
-							<p>Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim donec vel lectus vel felis.</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-6">
-						<!-- Icon Box -->
-						<div class="icon-box-1">
-
-							<div class="icon-container">
-								<i class="im im-icon-Car-3"></i>
-								<div class="icon-links">
-									<a href="listings-grid-standard-with-sidebar.html">For Sale</a>
-									<a href="listings-grid-standard-with-sidebar.html">For Rent</a>
-								</div>
-							</div>
-
-							<h3>Garages</h3>
-							<p>Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim donec vel lectus vel felis.</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-6">
-						<!-- Icon Box -->
-						<div class="icon-box-1">
-
-							<div class="icon-container">
-								<i class="im im-icon-Clothing-Store"></i>
-								<div class="icon-links">
-									<a href="listings-grid-standard-with-sidebar.html">For Sale</a>
-									<a href="listings-grid-standard-with-sidebar.html">For Rent</a>
-								</div>
-							</div>
-
-							<h3>Commercial</h3>
-							<p>Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim donec vel lectus vel felis.</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- Fullwidth Section / End -->
-
-
 		<!-- Parallax -->
-		<div class="parallax margin-bottom-70" data-background="images/listings-parallax.jpg" data-color="#36383e" data-color-opacity="0.7" data-img-width="800" data-img-height="505">
+		<div class="parallax margin-bottom-70" data-background="images/parallax.jpeg" data-color="#36383e" data-color-opacity="0.7" data-img-width="800" data-img-height="505">
 
 			<!-- Infobox -->
 			<div class="text-content white-font">
@@ -181,8 +85,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<h2>It's your journey. We're here to help.</h2>
-							<p>We’re full-service, local agents who know how to find people and home each together. We use online tools with an unmatched search capability to make you smarter and faster.</p>
-							<a href="listings-list-with-sidebar.html" class="button margin-top-25">Get Started</a>
+							<a href="/login-register" class="button margin-top-25">Get Started</a>
 						</div>
 					</div>
 
@@ -194,5 +97,5 @@
 		</div>
 		<!-- Parallax / End -->
 
-	
+
 @endsection

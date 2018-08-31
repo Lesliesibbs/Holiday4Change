@@ -58,10 +58,15 @@
 							<!-- Headline -->
 							<h3 class="headline with-border margin-top-45 margin-bottom-25">Welcome to Holiday4Change</h3>
 
-							<p>Etiam elit est, tincidunt non tincidunt elit, sed do. Mauris aliquet ultricies volutpat ipsum hendrerit sed neque sed sapien rutrum laoreet justo ut labolore magna aliqua. <del>This is deleted element</del> enim ad minim veniam. Lorem ipsum dosectetur.
-								Adipisicing elit sed domark element with “color” class., consectetur adipisicing. Lorem <dfn>dfn element here</dfn> ipsum dosectetur tincidunt sit amet, <strong>strong text</strong>. Aliquam eu id lectus. Vestibulum ante ipsum primis in faucibus
-								orci luctus et ultrices posuere cubilia. Lorem ipsum dosectetur velit sagittis, <abbr title="The abbr tag">abbreviation</abbr> elit est .</p>
+							<p>If you believe in spending time with your loved ones, developing and building new relationships with different people around the world then we are a company for you, Welcome to Holiday, a company for the people. </p>
+							<p>
+								Holiday4change is a family run business with a clear purpose: we exist simply to encourage joy, laughter and happiness to as many people as possible through everything we do. We provide our members holidays anyway in the world from £1 a month.
 
+Holiday’s provided by Thomas Cook through their gift cards. Giving you the power to choose your own destination and capture an experience of a lifetime with your loved ones.
+
+Holiday4change coming soon! Subscribe now…
+
+							</p>
 						</div>
 					</div>
 
@@ -82,8 +87,8 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<h2>It's your journey. We're here to help.</h2>
-							<p>We’re full-service, local agents who know how to find the best holiodays for people off all types of life looking for a holiday. We use online tools with an unmatched search capability to find holidays thats normally only a few afford and through our platform we manage to make these affordable for eveyone for a small monthly affordable fee.</p>
-							<a href="listings-list-with-sidebar.html" class="button margin-top-25">Get Started</a>
+							<p>Here is a short video explain How Holiday4Change works in more details. enjoy</p>
+							<a href="/login-register" class="button margin-top-25">Get Started</a>
 						</div>
 						<div class="col-sm-6">
 							<video  width="600" controls>
@@ -109,13 +114,13 @@
 			<div class="row">
 
 				<div class="col-md-12">
-					<h3 class="headline centered margin-bottom-35 margin-top-10">Most Popular Places <span>Properties In Most Popular Places</span></h3>
+					<h3 class="headline centered margin-bottom-35 margin-top-10">Most Popular Places</h3>
 				</div>
 
 				<div class="col-md-4">
 
 					<!-- Image Box -->
-					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-01.jpg">
+					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular1.jpeg">
 
 						<!-- Badge -->
 						<div class="listing-badges">
@@ -123,8 +128,7 @@
 						</div>
 
 						<div class="img-box-content visible">
-							<h4>New York </h4>
-							<span>14 Properties</span>
+							<h4>Turkey </h4>
 						</div>
 					</a>
 
@@ -133,10 +137,9 @@
 				<div class="col-md-8">
 
 					<!-- Image Box -->
-					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-02.jpg">
+					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular2.jpeg">
 						<div class="img-box-content visible">
-							<h4>Los Angeles</h4>
-							<span>24 Properties</span>
+							<h4>Italy</h4>
 						</div>
 					</a>
 
@@ -145,10 +148,9 @@
 				<div class="col-md-8">
 
 					<!-- Image Box -->
-					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-03.jpg">
+					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular3.jpeg">
 						<div class="img-box-content visible">
-							<h4>San Francisco </h4>
-							<span>12 Properties</span>
+							<h4>Gibraltar </h4>
 						</div>
 					</a>
 
@@ -157,10 +159,9 @@
 				<div class="col-md-4">
 
 					<!-- Image Box -->
-					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-04.jpg">
+					<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular4.jpeg">
 						<div class="img-box-content visible">
-							<h4>Miami</h4>
-							<span>9 Properties</span>
+							<h4>Hawaii</h4>
 						</div>
 					</a>
 
@@ -186,30 +187,29 @@
 
 					<div class="col-md-4">
 						<div class="testimonial-box">
-							<div class="testimonial">Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.</div>
+							<div class="testimonial">Great concept, great business model, Holiday4change is a great company we joined and never regretted it sign up now!!!</div>
 							<div class="testimonial-author">
-								<img src="images/happy-client-01.jpg" alt="">
-								<h4>Jennie Wilson <span>Rented Apartment</span></h4>
+								<h4>Jennie Wilson</h4>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-4">
 						<div class="testimonial-box">
-							<div class="testimonial">Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.</div>
+							<div class="testimonial">I love what the company stands for, its beliefs are amazing, and I believe that it will bring our family closer. </div>
 							<div class="testimonial-author">
-								<img src="images/happy-client-02.jpg" alt="">
-								<h4>Thomas Smith <span>Bought House</span></h4>
+
+								<h4>Thomas Smith</h4>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-4">
 						<div class="testimonial-box">
-							<div class="testimonial">Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.</div>
+							<div class="testimonial">Being on holiday with your loved ones is an amazing feeling. Now knowing that we can get it for £1.59 I couldn’t be happier </div>
 							<div class="testimonial-author">
-								<img src="images/happy-client-03.jpg" alt="">
-								<h4>Robert Lindstrom <span>Sold Apartment</span></h4>
+
+								<h4>Robert Lindstrom</h4>
 							</div>
 						</div>
 					</div>

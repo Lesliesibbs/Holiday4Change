@@ -32,3 +32,11 @@
     })
   });
 </script>
+
+
+<!-- COMMON SCRIPTS -->
+  <script src="js3/jquery-2.2.4.min.js"></script>
+  <script src="js3/common_scripts.min.js"></script>
+<script src="js3/menu.js"></script>
+<script src="js3/main.js"></script>
+<script src="js3/wizard_func_multiple_branch.js"></script>

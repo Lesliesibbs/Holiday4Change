@@ -37,7 +37,7 @@
 
 
 
-                <li class="{{ Request::is('love2shop') ? 'current' : '' }}"><a href="{{ url('love2shop') }}">Love2Shop</a>
+                <li><a href="https://www.highstreetvouchers.com/gifts/love2shop-holiday-gift-cards">Love2Shop</a>
 
                     </li>
 
