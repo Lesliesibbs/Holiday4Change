@@ -1,23 +1,15 @@
-<!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Scripts -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images2/favicon.png">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css2/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Custom CSS -->
-
+    <!-- Styles -->
     <link href="css2/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
     <link href="css2/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
     <link href="css2/lib/owl.carousel.min.css" rel="stylesheet" />
@@ -25,72 +17,97 @@
     <link href="css2/helper.css" rel="stylesheet">
     <link href="css2/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-
+    <!-- Scripts -->
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
+    <script src="https://use.fontawesome.com/9712be8772.js"></script>
 </head>
-<body class="fix-sidebar fix-header">
-      <!-- Main wrapper  -->
-    <div id="main-wrapper">
-      <div class="header">
-                  <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                      <!-- Logo -->
-                      <div class="navbar-header">
-                          <a class="navbar-brand" href="{{ url('/home') }}">
-                          </a>
-                          <!-- Logo icon -->
-                                <b><img src="images2/logo.png" alt="homepage" class="dark-logo logo-position" /></b>
-                                <!--End Logo icon -->
-                                <!-- Logo text -->
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                <div class="navbar-collapse">
-                    <!-- toggle and nav items -->
-                    <ul class="navbar-nav mr-auto mt-md-0">
-                        <!-- This is  -->
-                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
-                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <!-- Messages -->
+<body>
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
 
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        @if (!Auth::guest())
+                            <li><a href="{{ route('competition') }}">New Article</a></li>
+                         @endif
                     </ul>
-                    <!-- User profile and search -->
-                    <ul class="navbar-nav my-lg-0">
-                        <!-- Profile -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images2/users/5.jpg" alt="user" class="profile-pic" />{{ Auth::user()->name }}</a>
-                            <div class="dropdown-menu dropdown-menu-right animated zoomIn">
-                                <ul class="dropdown-user">
-                                    <li><a href="#"><i class="ti-user"></i> Profile</a></li>
-                                    <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
-                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
-                                    <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
-                                    <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        @role('Admin') {{-- Laravel-permission blade helper --}}
+                                        <a href="#"><i class="fa fa-btn fa-unlock"></i>Admin</a>
+                                        @endrole
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}><i class="fa fa-power-off"></i> Logout</a></li>
+                                            Logout
+                                        </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
                                 </ul>
-                            </div>
-                        </li>
+                            </li>
+                        @endif
                     </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+        @if(Session::has('flash_message'))
+            <div class="container">
+                <div class="alert alert-success"><em> {!! session('flash_message') !!}</em>
+                </div>
+            </div>
+        @endif
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                @include ('errors.list') {{-- Including error file --}}
+            </div>
         </div>
-      </div>
-        <!-- End header header -->
 
         @include ('layouts.left-sidebar')
 
         <!-- Page wrapper  -->
         <div class="page-wrapper">
-
-
 
         <main class="py-4">
             @yield('content')
@@ -102,7 +119,7 @@
 
         @include ('layouts.scripts')
 
-
     </div>
+
 </body>
 </html>
